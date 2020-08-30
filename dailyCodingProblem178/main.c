@@ -22,9 +22,12 @@
     Write a program to simulate the two games and calculate their expected value.
  */
 
-#include <stdio.h>
+#include "header.h"
 
 int main(int argc, const char * argv[]) {
+    srand((unsigned int) time(NULL));
+    simulationResults results = startSimulation();
+    printResults(results);
     
     return 0;
 }
